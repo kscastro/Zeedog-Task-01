@@ -1,0 +1,86 @@
+
+/****Estrutura do header******/
+.topo{
+    background-color: #61666a;
+    height: 33px;
+}
+
+#fale{
+    margin-top: -12px;
+    margin-left: 9px;
+    font-size: 12px
+}
+
+#frete{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -319px;
+    font-size: 12px;
+}
+
+#perfil{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -261px;
+    font-size: 12px;
+}
+
+#carrinho{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -180px;
+    font-size: 12px;
+}
+
+span.badge.new {
+    border-radius: 31px;
+    margin-top: 18px;
+}
+
+i.right {
+    margin-left: 3px;
+}
+
+
+nav a{
+    color:white;
+}
+
+nav ul a {
+    color: black;
+}
+
+.white{
+    margin-top: -31px;
+}
+
+#foto{
+    height: 194px;
+}
+
+#instagram{
+    height: 230px;
+}
+
+#iconSearch{
+    
+}
+.grayIcon{
+    color: #61666a21;
+}
+
+
+/******************Hover nas imagens ***********/
+
+#img-box img.img-hover {
+    display: none;
+  }
+  #img-box:hover img.img-default {
+    display: none;
+  }
+  #img-box:hover img.img-hover {
+    display: inherit;
+  }
+
+
+
