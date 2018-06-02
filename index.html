@@ -12,6 +12,9 @@
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Family Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    
     <!--Import materialize.css-->
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/index.css">
@@ -39,22 +42,28 @@
                 </div>   
             </nav>
         </div>
-        <div class="navbar-fixed">
+        <div class="navbar-fixed" id="mobile">
             <nav class="white">
                 <div class="nav-wrapper">
                     <a href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Logo ZeeDog"></a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <!-- Button Menu Mobile -->
+                    <a href="#" id="iconMobile" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    
+                    <!-- Menu Default -->
                     <ul class="left hide-on-med-and-down">
-                        <li><a href="#">Cachorros<i class="material-icons right">keyboard_arrow_down</i></a></li>
+                        <li class="menu-left"><a href="#">Cachorros<i class="material-icons right">keyboard_arrow_down</i></a></li>
                         <li><a href="#">Gatos<i class="material-icons right">keyboard_arrow_down</i></a></li>
                         <li><a href="#">Pessoas<i class="material-icons right">keyboard_arrow_down</i></a></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#">LookBook</a></li>
                         <li><a href="#">Quem somos</a></li>
-                        <li><a href="#">Onde encontrar</a></li>
+                        <li class="menu-right"><a href="#">Onde encontrar</a></li>
                     </ul>
                 </div>
+            </div>
+    
+                <!-- Menu Mobile -->
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="#">Cachorros<i class="material-icons right">keyboard_arrow_down</i></a></li>
                     <li><a href="#">Gatos<i class="material-icons right">keyboard_arrow_down</i></a></li>
@@ -63,12 +72,12 @@
                     <li><a href="#">Quem somos</a></li>
                     <li><a href="#">Onde encontrar</a></li>
                 </ul>
-            </nav>           
+            </nav>      
         </div>
         <div class="container">
                 <div class="row">
                     <div class="col s10 offset-s1">
-                        <form>
+                        <form class="form-mobile">
                             <div class="input-field grey lighten-2">
                                 <input type="search" id="search" placeholder="O QUE VOCÊ ESTÁ PROCURANDO?">
                                 <label class="label-icon"  for="search"><i class="material-icons" id="iconSearch" >search</i></label>
@@ -89,7 +98,7 @@
                             <img src="img/banner-principal.jpg" alt="Imagem Ivan e Bono">
                         </div>
                     </div>
-                    <p class="center-align">Na verdade antes de começarmos a surfar, eu comecei a remar com
+                    <p class="center-align" id="p-banner">Na verdade antes de começarmos a surfar, eu comecei a remar com
                         o Bono em buzios. Eu havia comprado uma prancha de SUP (Stand Up Paddle) pra aprender
                         a remar e o Bono, com um bom labrador, veio nadando atrás. Coloquei ele em cima da prancha
                         e percebi que dava pra remar com ele junto. A primeira onda veio alguns meses depois na
@@ -119,7 +128,7 @@
                         </div>
                     </div>
                     <h6 class="center-align">GUIA COM AMORTECEDOR PARA CACHORROS MAHALO</h6>
-                    <p class="center-align">R$ 119,00</p>
+                    <p class="center-align">A PARTIR DE R$ 119,00</p>
                 </div>        
                 <div class="col s12 m6 l4">
                     <div class="card">
@@ -130,7 +139,7 @@
                         </div>
                     </div>
                     <h6 class="center-align">GRAVATA BORBOLETA PARA CACHORROS STAR WARS STORMTROOPER</h6>
-                    <p class="center-align">R$ 24,00</p>
+                    <p class="center-align">A PARTIR DE R$ 24,00</p>
                 </div>        
                 <div class="col s12 m6 l4">
                     <div class="card">
@@ -141,7 +150,7 @@
                         </div>
                     </div>
                     <h6 class="center-align">COMEDOURO PARA CACHORROS BROOKLYN</h6>
-                    <p class="center-align">59,00</p>
+                    <p class="center-align">A PARTIR DE 59,00</p>
                 </div>
             </div>
         </div>
@@ -223,8 +232,9 @@
             </section>
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
 
     <script>
         $(document).ready(function(){
